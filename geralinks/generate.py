@@ -25,8 +25,8 @@ def generate_rss_from_posts(posts: tuple[str, str, str, datetime]) -> str:
     rss += '<rss version="2.0">\n'
     rss += '<channel>\n'
     rss += '\t<title>Geralinks Blog Posts - RSS Feed</title>\n'
-    rss += '\t<link>https://github.com/ArjixGamer/anime-rss</link>\n'
-    rss += '\t<description>A simple RSS feed for gogoanime!</description>\n\n\n'  # noqa
+    rss += '\t<link>https://github.com/ArjixWasTaken/random-rss-stuff-i-guess</link>\n'
+    rss += '\t<description>A simple RSS feed for geralinks!</description>\n\n\n'  # noqa
 
     for (title, link, image, date) in posts:
         rss += "\t<item>\n"
