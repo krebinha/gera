@@ -51,5 +51,5 @@ posts = sorted([
 )
 
 
-with codecs.open("feed.xml", "w", "utf-8") as f:
+with codecs.open("geralinks-feed.xml", "w", "utf-8") as f:
     f.write(generate_rss_from_posts(posts))
