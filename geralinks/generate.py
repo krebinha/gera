@@ -29,7 +29,7 @@ def generate_rss_from_posts(posts: tuple[str, str, str, datetime]) -> str:
     rss += '\t<description>A simple RSS feed for gogoanime!</description>\n\n\n'  # noqa
 
     for (title, link, image, date) in posts:
-        rss += "\t<item>"
+        rss += "\t<item>\n"
         rss += "\t\t<title>" + title + "</title>\n"
         rss += "\t\t<link>" + link + "</link>\n"
         rss += "\t\t<description>" + f'&lt;img src="{image}"&gt;' + "</description>\n"  # noqa
